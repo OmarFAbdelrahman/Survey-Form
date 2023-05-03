@@ -9,95 +9,114 @@
   <body>
     <h1 id="title">Learning Platform Survey Form</h1>
     <p id="description">Thank you for taking the survey</p>
-    <form action="" id="survey-form"></form>
-    <label id="name-label" for="name"
-      >Name <input type="text" id="name" placeholder="Enter your name" required
-    /></label>
-    <label id="email-label" for="email"
-      >Email
-      <input type="email" id="email" placeholder="Enter your email" required
-    /></label>
-    <label id="number-label" for="number"
-      >Age (Optional)
-      <input type="number" id="number" min="13" max="120" placeholder="Age"
-    /></label>
-    <label for="drop-down"
-      >What is your degree?
-      <select name="degree" id="drop-down">
-        <option value="1">Select an option</option>
-        <option value="2">High School</option>
-        <option value="3">Bachelors</option>
-        <option value="3">Masters</option>
-        <option value="3">PhD</option>
-      </select></label
-    >
-    <label>Have you used our platform before?</label>
-    <label for="used-platform"
-      ><input
-        type="radio"
-        name="platform-usage"
-        value="yes"
-        id="used-platform"
-      />
-      Yes</label
-    >
-    <label for="non-used-platform"
-      ><input
-        type="radio"
-        name="platform-usage"
-        value="no"
-        id="non-used-platform"
-      />
-      No</label
-    >
-    <label
-      >What do you like most about our platform? (Check all that apply)</label
-    >
-    <label for="topics"
-      ><input
-        type="checkbox"
-        id="topics"
-        name="most-liked-features"
-        value="topics"
-      />
-      Different courses topics</label
-    >
-    <label for="prices"
-      ><input
-        type="checkbox"
-        id="prices"
-        name="most-liked-features"
-        value="prices"
-      />
-      Affordable courses prices</label
-    >
-    <label for="subtitles"
-      ><input
-        type="checkbox"
-        id="subtitles"
-        name="most-liked-features"
-        value="subtitles"
-      />
-      Providing subtitles for different languages</label
-    >
-    <label for="playback-speed"
-      ><input
-        type="checkbox"
-        id="playback-speed"
-        name="most-liked-features"
-        value="playback-speed"
-      />
-      Controlling video playback speed</label
-    >
-    <label for="suggestions"
-      >Please add any additional suggestions or feedback
-      <textarea
-        name="suggestions"
-        id="suggestions"
-        cols="30"
-        rows="10"
-      ></textarea>
-    </label>
-    <input type="submit" name="submit" id="submit" />
+    <form action="" id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Name
+          <input type="text" id="name" placeholder="Enter your name" required
+        /></label>
+        <label id="email-label" for="email"
+          >Email
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        /></label>
+        <label id="number-label" for="number"
+          >Age (Optional)
+          <input type="number" id="number" min="13" max="120" placeholder="Age"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"
+          >What is your degree?
+          <select name="degree" id="dropdown">
+            <option value="1">Select an option</option>
+            <option value="2">High School</option>
+            <option value="3">Bachelors</option>
+            <option value="3">Masters</option>
+            <option value="3">PhD</option>
+          </select></label
+        >
+      </fieldset>
+      <fieldset>
+        <label>Have you used our platform before?</label>
+        <label for="used-platform"
+          ><input
+            class="inline"
+            type="radio"
+            name="platform-usage"
+            value="yes"
+            id="used-platform"
+          />
+          Yes</label
+        >
+        <label for="non-used-platform"
+          ><input
+            class="inline"
+            type="radio"
+            name="platform-usage"
+            value="no"
+            id="non-used-platform"
+          />
+          No</label
+        >
+        <label
+          >What do you like most about our platform? (Check all that
+          apply)</label
+        >
+        <label for="topics"
+          ><input
+            class="inline"
+            type="checkbox"
+            id="topics"
+            name="most-liked-features"
+            value="topics"
+          />
+          Different courses topics</label
+        >
+        <label for="prices"
+          ><input
+            class="inline"
+            type="checkbox"
+            id="prices"
+            name="most-liked-features"
+            value="prices"
+          />
+          Affordable courses prices</label
+        >
+        <label for="subtitles"
+          ><input
+            class="inline"
+            type="checkbox"
+            id="subtitles"
+            name="most-liked-features"
+            value="subtitles"
+          />
+          Providing subtitles for different languages</label
+        >
+        <label for="playback-speed"
+          ><input
+            class="inline"
+            type="checkbox"
+            id="playback-speed"
+            name="most-liked-features"
+            value="playback-speed"
+          />
+          Controlling video playback speed</label
+        >
+      </fieldset>
+      <label for="suggestions"
+        >Please add any additional suggestions or feedback
+        <textarea
+          name="suggestions"
+          id="suggestions"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </label>
+      <input type="submit" name="submit" id="submit" />
+    </form>
   </body>
 </html>
